@@ -1,40 +1,39 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>欢迎来到WebStart</title>
+    <title>WebStart | Log in</title>
+    <!--禁止百度转码-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="webresources/AdminLTE-2.4.0/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="webresources/AdminLTE/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="webresources/AdminLTE-2.4.0/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="webresources/AdminLTE-2.4.0/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="webresources/AdminLTE-2.4.0/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="webresources/AdminLTE/dist/css/AdminLTE.min.css">
     <!-- iCheck -->
-    <link rel="stylesheet" href="webresources/AdminLTE-2.4.0/plugins/iCheck/square/blue.css">
+    <link rel="stylesheet" href="webresources/AdminLTE/plugins/iCheck/square/blue.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Google Font -->
-    <link rel="stylesheet" href="webresources/googleapis-fonts/fonts.css">
+
 </head>
 <body class="hold-transition login-page">
-<!-- login box -->
 <div class="login-box">
-    <!-- login logo -->
     <div class="login-logo">
         <b>WebStart</b>
     </div>
-    <!-- login box body -->
     <div class="login-box-body">
-        <p class="login-box-msg">登录</p>
-        <!-- form -->
+        <p class="login-box-msg">登录WebStart</p>
         <form action="login" method="post">
             <div class="form-group has-feedback">
                 <input id="user.UserName" type="text" class="form-control" placeholder="用户名">
@@ -47,8 +46,8 @@
             <div class="row">
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
-                        <label class="">
-                            <div class="icheckbox_square-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>记住我
+                        <label>
+                            <input type="checkbox"> 记住我
                         </label>
                     </div>
                 </div>
@@ -59,12 +58,12 @@
         </form>
     </div>
 </div>
-<!-- jQuery 3 -->
-<script src="webresources/AdminLTE-2.4.0/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="webresources/AdminLTE-2.4.0/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery 2.2.3 -->
+<script src="webresources/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="webresources/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="webresources/AdminLTE-2.4.0/plugins/iCheck/icheck.min.js"></script>
+<script src="webresources/AdminLTE/plugins/iCheck/icheck.min.js"></script>
 <script>
     $(function () {
         $('input').iCheck({
